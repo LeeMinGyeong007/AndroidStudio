@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 앱 타이틀 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- 입력 필드 -->
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <!-- 버튼 배치 (숫자 키패드) -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:padding="8dp">
+
+        <Button android:id="@+id/btn0" android:text="@string/btn_0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn1" android:text="@string/btn_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn2" android:text="@string/btn_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn3" android:text="@string/btn_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn4" android:text="@string/btn_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn5" android:text="@string/btn_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn6" android:text="@string/btn_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn7" android:text="@string/btn_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn8" android:text="@string/btn_8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btn9" android:text="@string/btn_9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+    </GridLayout>
+
+    <!-- 연산 버튼 -->
+    <Button android:id="@+id/btn_add" android:text="@string/btn_add" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_subtract" android:text="@string/btn_subtract" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_multiply" android:text="@string/btn_multiply" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_divide" android:text="@string/btn_divide" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <!-- 결과 표시 -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result_text"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:gravity="center"/>
+</LinearLayout>
